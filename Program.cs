@@ -31,7 +31,7 @@ namespace ToDo
         /// <summary>
         /// Show the main menu 
         /// </summary>
-        /// <returns>Returns option indicated by user</returns>
+        /// <returns> Returns option indicated by user </returns>
         public static int ShowMainMenu()
         {
             Console.WriteLine("----------------------------------------");
