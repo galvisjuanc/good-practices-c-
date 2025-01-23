@@ -14,19 +14,19 @@ namespace ToDo
             do
             {
                 menuSelected = ShowMainMenu();
-                if (menuSelected == 1)
+                if ((Menu) menuSelected == Menu.Add)
                 {
                     ShowMenuAdd();
                 }
-                else if (menuSelected == 2)
+                else if ((Menu) menuSelected == Menu.Remove)
                 {
                     ShowRemoveMenu();
                 }
-                else if (menuSelected == 3)
+                else if ((Menu) menuSelected == Menu.List)
                 {
                     ShowMenuTaskList();
                 }
-            } while (menuSelected != 4);
+            } while ((Menu) menuSelected != Menu.Exit);
         }
         /// <summary>
         /// Show the main menu 
