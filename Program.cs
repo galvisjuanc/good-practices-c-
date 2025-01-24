@@ -64,8 +64,10 @@ namespace ToDo
                     Console.WriteLine("Tarea " + task + " eliminada");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
+                Console.WriteLine("Ha ocurrido un error al eliminar la tarea.");
+                Console.WriteLine(ex.Message);
             }
         }
 
