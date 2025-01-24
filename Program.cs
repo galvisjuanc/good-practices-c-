@@ -100,11 +100,9 @@ namespace ToDo
 
         public static void ListInformation()
         {
+            var indexTask = 1;
             Console.WriteLine("----------------------------------------");
-            for (int i = 0; i < TaskList.Count; i++)
-            {
-                Console.WriteLine((i + 1) + ". " + TaskList[i]);
-            }
+            TaskList.ForEach(task => Console.WriteLine((indexTask++) + ". " + task));
             Console.WriteLine("----------------------------------------");
         }
     }
