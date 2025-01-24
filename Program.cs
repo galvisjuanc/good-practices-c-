@@ -26,6 +26,10 @@ namespace ToDo
                 {
                     ShowMenuTaskList();
                 }
+                else if ((Menu)menuSelected == Menu.NotValid)
+                {
+                    Console.WriteLine("Opción Invalida. Digite otro valor.");
+                }
             } while ((Menu)menuSelected != Menu.Exit);
         }
         /// <summary>
@@ -43,7 +47,12 @@ namespace ToDo
 
             // Read valueChoosed
             string valueChoosed = Console.ReadLine();
-            return Convert.ToInt32(valueChoosed);
+            var i = 0;
+            if (int.TryParse(valueChoosed, out i))
+            {
+                return Convert.ToInt32(valueChoosed);
+            }
+            return ((int) Menu.NotValid);
         }
 
         public static void ShowRemoveMenu()
@@ -117,6 +126,7 @@ namespace ToDo
         Add = 1,
         Remove = 2,
         List = 3,
-        Exit = 4
+        Exit = 4,
+        NotValid = 5
     }
 }
