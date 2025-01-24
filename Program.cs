@@ -14,19 +14,19 @@ namespace ToDo
             do
             {
                 menuSelected = ShowMainMenu();
-                if ((Menu) menuSelected == Menu.Add)
+                if ((Menu)menuSelected == Menu.Add)
                 {
                     ShowMenuAdd();
                 }
-                else if ((Menu) menuSelected == Menu.Remove)
+                else if ((Menu)menuSelected == Menu.Remove)
                 {
                     ShowRemoveMenu();
                 }
-                else if ((Menu) menuSelected == Menu.List)
+                else if ((Menu)menuSelected == Menu.List)
                 {
                     ShowMenuTaskList();
                 }
-            } while ((Menu) menuSelected != Menu.Exit);
+            } while ((Menu)menuSelected != Menu.Exit);
         }
         /// <summary>
         /// Show the main menu 
@@ -59,9 +59,9 @@ namespace ToDo
                 int indexToRemove = Convert.ToInt32(valueToBeRemoved) - 1;
                 if (indexToRemove > -1 && TaskList.Count > 0)
                 {
-                        string task = TaskList[indexToRemove];
-                        TaskList.RemoveAt(indexToRemove);
-                        Console.WriteLine("Tarea " + task + " eliminada");                    
+                    string task = TaskList[indexToRemove];
+                    TaskList.RemoveAt(indexToRemove);
+                    Console.WriteLine("Tarea " + task + " eliminada");
                 }
             }
             catch (Exception)
@@ -88,7 +88,7 @@ namespace ToDo
             if (TaskList == null || TaskList.Count == 0)
             {
                 Console.WriteLine("No hay tareas por realizar");
-            } 
+            }
             else
             {
                 ListInformation();
