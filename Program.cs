@@ -103,13 +103,13 @@ namespace ToDo
 
         public static void ShowMenuTaskList()
         {
-            if (TaskList == null || TaskList.Count == 0)
+            if (TaskList?.Count > 0)
             {
-                Console.WriteLine("No hay tareas por realizar");
+                ListInformation(); 
             }
             else
             {
-                ListInformation();
+                Console.WriteLine("No hay tareas por realizar");
             }
         }
 
