@@ -67,14 +67,14 @@ namespace ToDo
                 int indexToRemove = Convert.ToInt32(valueToBeRemoved) - 1;
 
                 if(indexToRemove > (TaskList.Count - 1) || indexToRemove < 0)
-                        Console.WriteLine("Numero de tarea seleccionado no es valido");
+                        Console.WriteLine("El numero de tarea seleccionado no es valido");
                 else
                 {
                     if (indexToRemove > -1 && TaskList.Count > 0)
                     {
                         string taskToRemove = TaskList[indexToRemove];
                         TaskList.RemoveAt(indexToRemove);
-                        Console.WriteLine($"Tarea {taskToRemove} eliminada");
+                        Console.WriteLine($"Tarea {taskToRemove} eliminada!");
                     }
                 } 
             }
