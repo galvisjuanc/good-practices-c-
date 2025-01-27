@@ -89,10 +89,10 @@ namespace ToDo
         {
             try
             {
-                Console.WriteLine("Ingrese el nombre de la tarea: ");
+                Console.WriteLine("Ingrese el nombre de la tarea a agregar: ");
                 string task = Console.ReadLine();
                 TaskList.Add(task);
-                Console.WriteLine("Tarea registrada");
+                Console.WriteLine("Tarea registrada!");
             }
             catch (Exception ex)
             {
@@ -109,7 +109,7 @@ namespace ToDo
             }
             else
             {
-                Console.WriteLine("No hay tareas por realizar");
+                Console.WriteLine("No hay tareas por realizar.");
             }
         }
 
