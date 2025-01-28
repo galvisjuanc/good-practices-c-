@@ -23,7 +23,7 @@
     } while ((Menu)menuSelected != Menu.Exit);
 
 /// <summary>
-/// Show the main menu 
+/// Show the options for Tasks
 /// </summary>
 /// <returns> Returns option indicated by user </returns>
 int ShowMainMenu()
@@ -35,9 +35,8 @@ int ShowMainMenu()
     Console.WriteLine("3. Tareas pendientes");
     Console.WriteLine("4. Salir");
 
-    // Read valueChoosed
     string valueChoosed = Console.ReadLine();
-    var i = 0;
+    int i = 0;
     if (int.TryParse(valueChoosed, out i))
     {
         return Convert.ToInt32(valueChoosed);
