@@ -49,11 +49,11 @@ void ShowRemoveMenu()
     try
     {
         Console.WriteLine("Ingrese el número de la tarea a remover: ");
-        // Show current taks
         ListInformation();
 
         string valueToBeRemoved = Console.ReadLine();
-        // Remove one position
+        
+        // Remove one position because the array starts in 0
         int indexToRemove = Convert.ToInt32(valueToBeRemoved) - 1;
 
         if (indexToRemove > (TaskList.Count - 1) || indexToRemove < 0)
