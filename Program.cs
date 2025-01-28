@@ -53,7 +53,7 @@ void ShowRemoveMenu()
 
         string valueToBeRemoved = Console.ReadLine();
         
-        // Remove one position because the array starts in 0
+        // Remove one position because the array starts at 0
         int indexToRemove = Convert.ToInt32(valueToBeRemoved) - 1;
 
         if (indexToRemove > (TaskList.Count - 1) || indexToRemove < 0)
