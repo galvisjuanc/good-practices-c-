@@ -1,4 +1,4 @@
-﻿List<string> TaskList = new List<string>();
+﻿List<string> TaskList = [];
 
     int menuSelected = 0;
     do
