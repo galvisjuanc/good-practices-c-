@@ -48,7 +48,7 @@ void ShowRemoveMenu()
 {
     try
     {
-        Console.WriteLine("Ingrese el número de la tarea a remover: ");
+        Console.WriteLine("Ingrese el número de la tarea a remover del listado: ");
         ListInformation();
 
         string valueToBeRemoved = Console.ReadLine();
