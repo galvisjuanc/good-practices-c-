@@ -6,3 +6,5 @@ git push -u origin main
 Use git remote -v to see the remote branch connected
 Change the remote to the version you are using
 git remote set-url origin <github link>
+
+The name of the project originally was good-practices-c#
